@@ -1,0 +1,8 @@
+[      36ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4173/_app/immutable/entry/start.DDs_RMTW.js:0
+[      40ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4173/_app/immutable/chunks/BTmE1KQn.js:0
+[      41ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4173/_app/immutable/entry/app.B7xW4FIG.js:0
+[      42ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4173/_app/immutable/nodes/2.BIS-PxUb.js:0
+[      44ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4173/_app/immutable/assets/0.ZrhdaXI8.css:0
+[      44ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4173/_app/immutable/assets/2.DHz3YBQO.css:0
+[      76ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4173/_app/immutable/nodes/0.DEbdvJdO.js:0
+[      77ms] Failed to fetch dynamically imported module: http://localhost:4173/_app/immutable/entry/start.DDs_RMTW.js

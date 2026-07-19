@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+	--color-ink: #06090f;
+	--color-panel: #0b1018;
+	--color-panel-2: #0e1520;
+	--color-line: #1b2432;
+	--color-fg: #e8edf4;
+	--color-mute: #8a94a6;
+	--color-dim: #5b6575;
+	--color-amber: #ffb454;
+	--color-amber-dim: #b97f33;
+	--color-ok: #7ad38a;
+
+	--font-display: 'Archivo', system-ui, sans-serif;
+	--font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+html {
+	scroll-behavior: smooth;
+	background: var(--color-ink);
+}
+
+body {
+	font-family: var(--font-display);
+	color: var(--color-fg);
+	background: var(--color-ink);
+	-webkit-font-smoothing: antialiased;
+}
+
+::selection {
+	background: var(--color-amber);
+	color: var(--color-ink);
+}
+
+:focus-visible {
+	outline: 2px solid var(--color-amber);
+	outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
