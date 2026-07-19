@@ -1,42 +1,21 @@
-# sv
+# Sedric Edwards — High-Velocity Studio
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Single-page agency site. SvelteKit + TypeScript + Tailwind CSS, static build.
 
-## Creating a project
+Live: https://sedricedwards.github.io/agency-site/
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
+## Develop
 
 ```sh
-# recreate this project
-npx sv@0.16.3 create --template minimal --types ts --add tailwindcss="plugins:none" sveltekit-adapter="adapter:static" --no-download-check --install npm Agency
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
+npm install
 npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
+## Deploy
 
 ```sh
-npm run build
+$env:BASE_PATH='/agency-site'; npm run build
+npx gh-pages -d build -t
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+`BASE_PATH` is only needed for GitHub Pages; omit it when hosting at a domain root.
